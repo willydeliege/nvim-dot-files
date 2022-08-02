@@ -100,7 +100,7 @@ return packer.startup(function(use)
     use "RRethy/nvim-base16"
     use "NTBBloodbath/doom-one.nvim"
     use "LunarVim/Colorschemes"
-
+    use "sainnhe/everforest"
     -- Buffer (Tab) line
     use "akinsho/bufferline.nvim" --
     use "moll/vim-bbye"
