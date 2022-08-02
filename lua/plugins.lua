@@ -79,6 +79,12 @@ return packer.startup(function(use)
             }
         end,
     }
+    -- show identations 
+    use {"lukas-reineke/indent-blankline.nvim",
+        config = function ()
+            require("plugins.indent-blank-lines")
+        end
+    }
 
     ----------------------------
     -- Notifications
