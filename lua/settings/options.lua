@@ -10,7 +10,7 @@ local options = {
     mouse = "a", -- allow the mouse to be used in neovim
     pumheight = 10, -- pop up menu height
     showmode = false, -- we don't need to see things like -- INSERT -- anymore
-    showtabline = 1, -- Don't show tab line
+    showtabline = 2, -- Don't show tab line
     smartcase = true, -- smart case
     smartindent = true, -- make indenting smarter again
     splitbelow = true, -- force all horizontal splits to go below current window
@@ -33,7 +33,10 @@ local options = {
     scrolloff = 8, -- is one of my fav
     guifont = "monospace:h17", -- the font used in graphical neovim applications
     spell = false, -- disable spell checking
-    confirm = true
+    confirm = true, --confirm before quitting with unsaved files
+    foldmethod = "expr",
+    foldexpr = "nvim_treesitter#foldexpr()",
+    foldlevelstart = 99,
 }
 
 for k, v in pairs(options) do

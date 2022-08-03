@@ -79,9 +79,9 @@ return packer.startup(function(use)
             }
         end,
     }
-    -- show identations 
-    use {"lukas-reineke/indent-blankline.nvim",
-        config = function ()
+    -- show identations
+    use { "lukas-reineke/indent-blankline.nvim",
+        config = function()
             require("plugins.indent-blank-lines")
         end
     }
@@ -199,7 +199,7 @@ return packer.startup(function(use)
             require('Comment').setup()
         end
     }
-
+    use { "unblevable/quick-scope" }
     --------------------------------------
     -- File type specific --
     --------------------------------------
