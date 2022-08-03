@@ -104,7 +104,6 @@ return packer.startup(function(use)
     -- Buffer (Tab) line
     use "akinsho/bufferline.nvim" --
     use "moll/vim-bbye"
-    use "kdheepak/tabline.nvim"
     -- Status Line
     use 'nvim-lualine/lualine.nvim'
 
